@@ -1,0 +1,39 @@
+{
+  "name": "com.yvsim.flow-framework",
+  "version": "1.0.0",
+  "displayName": "Flow Framework",
+  "description": "基于状态模式的轻量流程框架，适合虚拟实验、操作培训、设备步骤和需要记录执行结果的仿真流程。\n\n主要功能：\n1. 用 Enter、Update、LateUpdate、FixedUpdate、Exit 定义状态生命周期，状态切换立即同步执行。\n2. 通过共享上下文查询当前、上一及已运行状态；按每次进入分别记录运行历史、开始/结束时间、结果和备注。\n3. 同时统计实际经过时间与有效用时，可暂停业务计时，并按应用后台/失焦设置处理计时。\n4. 支持结束最后状态、状态切换/完成事件、清理历史和独立 JSON 快照，供报告或业务存档使用。\n5. 提供创建 Flow 系统菜单、运行状态 Inspector 和只读实时调试窗口。\n\n使用说明：管理器跨场景保留；快照只生成数据，不代办文件保存或上传。异步工作的下一步由业务在完成时触发，框架不自动等待任务或调度重试。依赖 Inspector Groups，附带五步仿真实验示例。",
+  "unity": "2021.3",
+  "author": {
+    "name": "Yvsim"
+  },
+  "license": "MIT",
+  "keywords": [
+    "flow",
+    "state-machine",
+    "workflow",
+    "simulation",
+    "timing"
+  ],
+  "samples": [
+    {
+      "displayName": "Flow Framework Examples",
+      "description": "打开 Flow Framework 场景，以设备检查、受试者登记、基线校准、实验执行和数据保存五步流程，演示状态推进、结果备注、有效计时暂停、最后状态结束及 JSON 快照；可同时观察 Flow Debugger。",
+      "path": "Samples~/Flow Framework"
+    }
+  ],
+  "dependencies": {
+    "com.yvsim.inspector-groups": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuyan7669/com.yvsim.flow-framework.git"
+  },
+  "documentationUrl": "https://github.com/liuyan7669/com.yvsim.flow-framework#readme",
+  "changelogUrl": "https://github.com/liuyan7669/com.yvsim.flow-framework/blob/main/CHANGELOG.md",
+  "bugs": {
+    "url": "https://github.com/liuyan7669/com.yvsim.flow-framework/issues"
+  },
+  "licensesUrl": "https://github.com/liuyan7669/com.yvsim.flow-framework/blob/main/LICENSE.md"
+}

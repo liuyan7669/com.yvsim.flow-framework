@@ -1,0 +1,7 @@
+{
+  "name": "Yvsim.FlowFramework",
+  "rootNamespace": "Yvsim.FlowFramework",
+  "references": [
+    "Yvsim.InspectorGroups"
+  ]
+}
